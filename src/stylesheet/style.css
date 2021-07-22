@@ -15,6 +15,12 @@ li {
   margin: 0 auto;
   padding: 10px;
 }
+.ml-40 {
+  margin-left: 40px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
 
 .header {
   height: 480px;
@@ -61,7 +67,10 @@ a.header__link {
 }
 a.header__link:hover {
   cursor: pointer;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+a.header__link-active {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 /* .header__nav li {
   display: inline;
@@ -247,7 +256,7 @@ a.header__link:hover {
   max-width: 100%;
   flex: 16%;
   padding: 32px;
-  margin: 16px 32px;
+  /* margin: 16px 32px; */
 }
 .card__date {
   color: #103B5E;
@@ -354,7 +363,7 @@ a.header__link:hover {
   font-size: 18px;
   line-height: 40px;
   padding-left: 20px;
-  margin-top: 32px;
+  margin-bottom: 12px;
   transition: all 0.3s ease;
   /* display: table-row; 
   vertical-align: middle; */
@@ -434,6 +443,34 @@ a.header__link:hover {
   line-height: 12px;
   text-align: center;
 }
+
+.login-block__header {
+  background: rgba(4, 9, 42, 1);
+  padding-bottom: 5px;
+}
+.login__product-info h3 {
+  color: rgba(0, 0, 0, 0.88);
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.login__info-position {
+  display: flex;
+}
+.login__info-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Public Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.login__info-table {
+  display: table;
+}
+
+
+
 
 @media screen and (max-width: 1024px) {
   .header__nav li {
