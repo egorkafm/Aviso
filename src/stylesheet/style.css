@@ -205,7 +205,7 @@ a.header__link:hover {
 	height: 100%;
 	padding: 15px;
 	/* background-color: rgba(34, 77, 133, 1); */
-  background-image: url(./src/img/bg_header.png);
+  background-image: url(../img/bg.png);
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
 }
@@ -301,7 +301,7 @@ a.header__link:hover {
   position: relative;
 }
 /* .legislation__item::before {
-  content: url(./src/img/Item.png);
+  content: url(../img/Item.png);
   position: absolute;
   height: 100%;
   top: 5px;
@@ -346,7 +346,8 @@ a.header__link:hover {
 }
 .faq__content-btn {
   /* background: rgba(255, 255, 255, 0.64); */
-  width: 325px;
+  width: 323px;
+  border: 1px solid transparent;
   height: 40px;
   color: rgba(255, 255, 255, 0.64);
   font-weight: 500;
@@ -360,6 +361,7 @@ a.header__link:hover {
 }
 .faq__content-btn:hover{
   background: rgba(255, 255, 255, 0.64);
+  border-left: 1px solid white;
   color: rgba(18, 85, 153, 1);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -402,17 +404,17 @@ a.header__link:hover {
   position: relative;
 }
 .address__icon::before {
-  content: url(./src/img/Vector.svg);
+  content: url(../img/Vector.svg);
   position: absolute;
   left: -30px;
 }
 .phone__icon::before {
-  content: url(./src/img/Vector2.svg);
+  content: url(../img/Vector2.svg);
   position: absolute;
   left: -30px;
 }
 .email__icon::before {
-  content: url(./src/img/Vector3.svg);
+  content: url(../img/Vector3.svg);
   position: absolute;
   left: -30px;
 }
@@ -448,7 +450,6 @@ a.header__link:hover {
     /* transform: translate(-50%, -50%);
     top: 100%;
     left: 25%; */
-
     /* height: 400px; */
   }
   .burger__menu-btn {
