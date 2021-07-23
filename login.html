@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Hind:400,600%7CSource+Sans+Pro:400,600,700%7CFresca"
+        rel="stylesheet"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/stylesheet/style.css">
+    <title>Aviso</title>
+</head>
+
+<body>
+<header class="login-block__header">
+  <div class="container">
+    <div class="header__menu login-block__header">
+      <div class="header__logo">Aviso</div>
+      <div class="header__nav">
+        <nav>
+          <ul class="header__links-position">
+            <li><a class="header__link" href="./index.html">Aviso</a></li>
+            <li><a class="header__link" href="#">Legislation</a></li>
+            <li><a class="header__link" href="#">I recieved a Notice</a></li>
+            <li><a class="header__link" href="#">Contact</a></li>
+            <li><a class="header__link header__link-active" href="#">Alexander P.</a></li>
+          </ul>
+          <div class="header__login" id="headerLogin">
+            <h3>Login</h3>
+            <form action="#">
+              <input class="header__login-inp" type="email" placeholder="Email">
+              <input class="header__login-inp" type="password" placeholder="Password">
+              <div class="header__login-text">
+                <span>Don’t have an account?</span>
+                <input class="header__login-btn" type="submit" value="Sign up"> 
+              </div class="header__login-text">
+              <div class="header__login-text">Problems logging in? Call 0123456222</div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="burger__menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="burger__menu">
+        <nav>
+          <li><a href="#">Aviso</a></li>
+          <li><a href="#">Legislation</a></li>
+          <li><a href="#">I recieved a Notice</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Alexander P.</a></li>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="login__product" >
+  <div class="container">
+    <div class="login__product-info">
+      <h3>Alexander Petersburg</h3>
+      <div class="login__info-position">
+        <div class="login__info-text">
+          <div>Identification Timestamp (UTC) : </div>
+          <div>Presonal ID Number : </div>
+          <div>Residential Address : </div>
+          <div>Courtorder : </div>
+          <div>Courtorder date : </div>
+          <div>Judge :</div>
+        </div>
+        <div class="login__info-text ml-40">
+          <div>12-07-2021  &nbsp; &nbsp;  07:29:46</div>
+          <div>3331-1133-1025-3695</div>
+          <div>São Paulo, Rua Antônio Coruja 1313</div>
+          <div><a class="login__info-links" href="#">12-cv-1231</a></div>
+          <div>21-07-2021</div>
+          <div>Sergio Fernando Moro</div>
+        </div>
+      </div>
+      <h3>Your Violations</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>IP</th>
+            <th>ISP</th>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Penalty</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20-07-2021</td>
+            <td><a class="login__info-links" href="#">1.33.213.226</a></td>
+            <td>TIM Brazil</td>
+            <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
+            <td class="login__table-type">Illegal Download</td>
+            <td>$5.00</td>
+            <td><a class="login__info-links" href="#">Details</a></td>
+          </tr>
+          <tr>
+            <td>20-07-2021</td>
+            <td><a class="login__info-links" href="#">1.33.213.226</a></td>
+            <td>TIM Brazil</td>
+            <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
+            <td class="login__table-type">Illegal Download</td>
+            <td>$5.00</td>
+            <td><a class="login__info-links" href="#">Details</a></td>
+          </tr>
+          <tr>
+            <td>20-07-2021</td>
+            <td><a class="login__info-links" href="#">1.33.213.226</a></td>
+            <td>TIM Brazil</td>
+            <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
+            <td class="login__table-type">Illegal Download</td>
+            <td>$5.00</td>
+            <td><a class="login__info-links" href="#">Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="login__pay">
+      <div class="login__pay-price">
+        <div>Tonal</div>
+        <div>$15.00</div>
+      </div>
+      <p class="login__pay-text">
+        This offer is limited for a period of 21 days 
+        after receiving the first notice.
+      </p>
+      <form class="login__pay-text" action="#" method="POST">
+        <input class="custom-checkbox" type="checkbox" id="checkbox1" name="checkbox1"/>
+        <label for="checkbox1">
+          I agree with&nbsp;<a class="form__link" href="#" target="_blank">Terms And Conitions</a>
+        </label><br/>
+        <button class="login__form-btn">Proceed To Checkout</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">
+        Copyright © 2021 Aviso Todos os direitos reservados.
+      </p>
+    </div>
+</footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
