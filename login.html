@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./src/stylesheet/style.css">
     <title>Aviso</title>
 </head>
@@ -63,23 +64,47 @@
 <section class="login__product" >
   <div class="container">
     <div class="login__product-info">
-      <h3>Alexander Petersburg</h3>
+      <h3>Piracy Warning Notice</h3>
       <div class="login__info-position">
         <div class="login__info-text">
-          <div>Identification Timestamp (UTC) : </div>
-          <div>Presonal ID Number : </div>
-          <div>Residential Address : </div>
-          <div>Courtorder : </div>
-          <div>Courtorder date : </div>
-          <div>Judge :</div>
+          <div class="login__info-bold">
+            <div>Full Name:</div>
+            <div>Presonal ID Number:</div>
+            <div>Residential Address:</div>
+            <div>Id Timestamp (UTC):</div>
+            <div>Warning Activity:</div>
+          </div>
+          <div>
+            <div>Alexander Petersburg</div>
+            <div>3331-1133-1025-3695</div>
+            <div>São Paulo, Rua Antônio Coruja 1313</div>
+            <div>12-07-2021  &nbsp; &nbsp;  07:29:46</div>
+            <div>Bittorent Download</div>
+          </div>
         </div>
-        <div class="login__info-text ml-40">
-          <div>12-07-2021  &nbsp; &nbsp;  07:29:46</div>
-          <div>3331-1133-1025-3695</div>
-          <div>São Paulo, Rua Antônio Coruja 1313</div>
-          <div><a class="login__info-links" href="#">12-cv-1231</a></div>
-          <div>21-07-2021</div>
-          <div>Sergio Fernando Moro</div>
+        <div class="login__info-text">
+          <div class="login__info-bold">
+            <div>Compliant(s): </div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>Courtorder:</div>
+            <div>Courtorder date:</div>
+            <div>Judge:</div>
+          </div>
+          <div>
+            <div>
+              Rambo V Production inc.
+              <br>
+              Mechanic Production inc.
+              <br>
+              Hitman LLC
+            </div>
+            <!-- <div></div>
+            <div></div> -->
+            <div><a class="login__info-links" href="#">12-cv-1231</a></div>
+            <div>21-07-2021</div>
+            <div>Sergio Fernando Moro</div>
+          </div>
         </div>
       </div>
       <h3>Your Violations</h3>
@@ -100,10 +125,19 @@
             <td>20-07-2021</td>
             <td><a class="login__info-links" href="#">1.33.213.226</a></td>
             <td>TIM Brazil</td>
-            <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
+            <td id="myBtn">Hitman's Bodyguards Wife(2021) Bittorrent</td>
             <td class="login__table-type">Illegal Download</td>
             <td>$5.00</td>
-            <td><a class="login__info-links" href="#">Details</a></td>
+            <td><a class="login__info-links" href="./details.html">Details</a></td>
+          </tr>
+          <tr>
+            <td>20-07-2021</td>
+            <td><a class="login__info-links" href="#">1.33.213.226</a></td>
+            <td>TIM Brazil</td>
+            <td id="myBtn2">Hitman's Bodyguards Wife(2021) Bittorrent</td>
+            <td class="login__table-type">Illegal Download</td>
+            <td>$5.00</td>
+            <td><a class="login__info-links" href="./details.html">Details</a></td>
           </tr>
           <tr>
             <td>20-07-2021</td>
@@ -112,16 +146,7 @@
             <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
             <td class="login__table-type">Illegal Download</td>
             <td>$5.00</td>
-            <td><a class="login__info-links" href="#">Details</a></td>
-          </tr>
-          <tr>
-            <td>20-07-2021</td>
-            <td><a class="login__info-links" href="#">1.33.213.226</a></td>
-            <td>TIM Brazil</td>
-            <td>Hitman's Bodyguards Wife(2021) Bittorrent</td>
-            <td class="login__table-type">Illegal Download</td>
-            <td>$5.00</td>
-            <td><a class="login__info-links" href="#">Details</a></td>
+            <td><a class="login__info-links" href="./details.html">Details</a></td>
           </tr>
         </tbody>
       </table>
@@ -141,10 +166,84 @@
           I agree with&nbsp;<a class="form__link" href="#" target="_blank">Terms And Conitions</a>
         </label><br/>
         <button class="login__form-btn">Proceed To Checkout</button>
+        <img src="/src/img/Visa.png" alt="Visa">
+        <img src="/src/img/Masterrcard.png" alt="Masterrcard">
+        <img src="/src/img/Paypal.png" alt="Paypal">
       </form>
     </div>
   </div>
 </section>
+
+<!-- <section>
+  <div class="modal__card">
+    <div class="modal__card-text">
+      <div>IP Adress:</div>
+      <div>TCP PORT:</div>
+      <div>Transfer Type:</div>
+      <div>Torrent Client:</div>
+      <div>Peer ID:</div>
+      <div>Torrent Hash:</div>
+      <div>Torrent Name:</div>
+      <div>File Name:</div>
+      <div>Bit Field:</div>
+      <div>Transfer Date (UTC):</div>
+      <div>Owner:</div>
+    </div>
+    <div class="modal__card-text">
+      <div>76.68.28.63</div>
+      <div>62280</div>
+      <div>Bittorrent</div>
+      <div>uTorrent 2.4.2</div>
+      <div>2D5554333535572D3CB2A35FA40283D4C0B91032</div>
+      <div>99D7078E9713B464F303C76A175AFB7E0C9A267B</div>
+      <div>Rambo.Last.Blood.2019.HC.HDRip.XviD.AC3-EVO[TGx]</div>
+      <div>Rambo.Last.Blood.2019.HC.HDRip.avi</div>
+      <div>100</div>
+      <div>24.04.2020 3:18:25</div>
+      <div>Rambo V Productions, Inc.</div>
+    </div>
+    <div class="modal__card-img">
+      <img src="./src/img/Cover.png" alt="Cover">
+    </div>
+  </div>
+</section> -->
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal__card">
+      <div class="modal__card-text">
+        <div>IP Adress:</div>
+        <div>TCP PORT:</div>
+        <div>Transfer Type:</div>
+        <div>Torrent Client:</div>
+        <div>Peer ID:</div>
+        <div>Torrent Hash:</div>
+        <div>Torrent Name:</div>
+        <div>File Name:</div>
+        <div>Bit Field:</div>
+        <div>Transfer Date (UTC):</div>
+        <div>Owner:</div>
+      </div>
+      <div class="modal__card-text">
+        <div>76.68.28.63</div>
+        <div>62280</div>
+        <div>Bittorrent</div>
+        <div>uTorrent 2.4.2</div>
+        <div>2D5554333535572D3CB2A35FA40283D4C0B91032</div>
+        <div>99D7078E9713B464F303C76A175AFB7E0C9A267B</div>
+        <div>Rambo.Last.Blood.2019.HC.HDRip.XviD.AC3-EVO[TGx]</div>
+        <div>Rambo.Last.Blood.2019.HC.HDRip.avi</div>
+        <div>100</div>
+        <div>24.04.2020 3:18:25</div>
+        <div>Rambo V Productions, Inc.</div>
+      </div>
+      <div class="modal__card-img">
+        <img src="./src/img/Cover.png" alt="Cover">
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
     <div class="container">
