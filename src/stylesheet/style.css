@@ -15,11 +15,14 @@ li {
   margin: 0 auto;
   padding: 10px;
 }
+.pl-10 {
+  padding: 0 0 0 10px;
+}
 .ml-40 {
   margin-left: 40px;
 }
-.mt-32 {
-  margin-top: 32px;
+.mt-30 {
+  margin-top: 30px;
 }
 
 .header {
@@ -429,20 +432,28 @@ a.header__link-active {
   line-height: 36px;
 }
 .legislation__img {
+  margin-top: 24px;
   width: 100%;
 }
 .legislation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0px 10px 40px 10px;
 }
 .legislation__item {
-  margin-top: 32px;
+  margin-top: 24px;
   padding-right: 5%;
   flex: 44%;
   position: relative;
 }
+.mt-40 {
+  margin-top: 40px;
+}
+/* .legislation__item:nth-child(3),:nth-child(4) {
+  background-color: brown;
+  margin-top: 40px;
+} */
 /* .legislation__item::before {
   content: url(../img/Item.png);
   position: absolute;
@@ -477,7 +488,7 @@ a.header__link-active {
 }
 .faq__title {
   color: rgba(255, 255, 255, 0.96);
-  margin-top: 38px;
+  margin-top: 28px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -511,7 +522,7 @@ a.header__link-active {
 }
 .faq__content-text {
   color: rgba(255, 255, 255, 0.88);
-  margin: 32px;
+  margin: 30px;
   width: 55%;
   font-weight: normal;
   font-size: 18px;
@@ -836,6 +847,8 @@ td {
 }
 
 .details__header {
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 60px;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   font-size: 14px;
@@ -843,11 +856,26 @@ td {
   display: flex;
   justify-content: space-between;
 }
+.details__header-date {
+  flex: 44%;
+}
+.details__header-detailed {
+  flex: 28%;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
+}
+.details__header-id {
+  flex: 28%;
+}
+
 .details__header-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
+  margin: 45px 0 80px 0;
 }
 .details__info-position {
   display: flex;
@@ -856,6 +884,7 @@ td {
 }
 .details__table-position {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-top: rgba(0, 0, 0, 0.8) solid 2px;
   border-bottom: rgba(0, 0, 0, 0.8) solid 2px;
