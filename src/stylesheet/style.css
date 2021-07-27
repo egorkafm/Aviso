@@ -87,28 +87,25 @@ a.header__link-active {
   white-space: nowrap;
 }
 .header__login {
-  display: none; /* Login */
+  display: none; 
   position: absolute;
   padding: 16px 32px;
   top: 30px;
   left: 52%;
   font-family: 'Public Sans', sans-serif;
-  max-width: 261px;
+  width: 261px;
   /* max-height: 164px; */
   background: linear-gradient(rgba(0, 94, 176, 1), rgba(34, 77, 133, 1));
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.64);
 }
-/* .active {
-  display: block;
-} */
-.header__login h3 {
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+.header__login:hover {
+  cursor: pointer;
 }
+.active {
+  display: block;
+}
+
 .header__login-inp {
   margin-top: 16px;
   width: 92%;
@@ -122,6 +119,25 @@ a.header__link-active {
 }
 .header__login-inp::placeholder {
   color: rgba(255, 255, 255, 0.64);
+}
+.header__login-submit {
+  margin-top: 16px;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  background: rgba(4, 9, 42, 1);
+  border: rgba(4, 9, 42, 1) 1px solid;
+  transition: all 0.3s ease;
+}
+.header__login-submit:hover {
+  background-color: rgb(245, 245, 245);
+  background: transparent;
+  color: #FFFFFF;
+  border: #FFFFFF 1px solid;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .header__login-btn {
   background: none;
@@ -200,6 +216,9 @@ a.header__link-active {
 	background-color: rgb(255, 255, 255);
 	transition: all 0.5s;
 }
+.burger__menu-btn:hover {
+  cursor: pointer;
+}
 .burger__menu-btn span:nth-of-type(2) {
 	top: calc(50% - 5px);
 }
@@ -217,6 +236,7 @@ a.header__link-active {
   background-image: url(../img/bg.png);
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
+  z-index: 10;
 }
 .burger__menu.active {
 	transform: translateX(0);
@@ -260,7 +280,7 @@ a.header__link-active {
 
 .news__card {
   /* background-color: coral; */
-  color: #444444;
+  color: #000000;
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
@@ -746,15 +766,17 @@ td {
   border-color: #b3d7ff;
 }
 .custom-checkbox:focus + label::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
 }
 .custom-checkbox:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
 .custom-checkbox:checked + label::before {
   border-color: #f2f2f2;
-  background-color: rgba(245, 247, 250, 0.5);
-  background-image: url(../img/Done.svg);
+  /* background-color: rgba(245, 247, 250, 0.5); */
+  background: #ffffff;
+  /* background-image: url(../img/Done.svg); */
+  background-image: url(../img/icon.svg);
   background-size: contain;
 }
 .custom-checkbox:disabled + label::before {

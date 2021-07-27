@@ -26,21 +26,37 @@
             <li><a class="header__link" href="#">Aviso</a></li>
             <li><a class="header__link" href="#">Legislation</a></li>
             <li><a class="header__link" href="#">I recieved a Notice</a></li>
-            <li><a class="header__link" href="./login.html">Login</a></li>
+            <li><a id='headerLogin' class="header__link" href="#">Login</a></li>
+            <!-- <li id='headerLogin' class="header__link">Login ./login.html</li> -->
             <li><a class="header__link" href="#">Contact</a></li>
           </ul>
-          <div class="header__login" id="headerLogin">
-            <h3>Login</h3>
+          <div class="header__login">
+            <span class="close">&times;</span>
             <form action="#">
               <input class="header__login-inp" type="email" placeholder="Email">
               <input class="header__login-inp" type="password" placeholder="Password">
+              <input class="header__login-submit" type="submit" value="Sign Up">
               <div class="header__login-text">
-                <span>Don’t have an account?</span>
+                <span>Don’t have an account?&nbsp;</span>
                 <input class="header__login-btn" type="submit" value="Sign up"> 
               </div class="header__login-text">
               <div class="header__login-text">Problems logging in? Call 0123456222</div>
             </form>
           </div>
+          <!-- <div class="header__login">
+            <span class="close">&times;</span>
+            <form action="#">
+              <input class="header__login-inp" type="email" placeholder="Email">
+              <input class="header__login-inp" type="password" placeholder="Password">
+              <input class="header__login-inp" type="password" placeholder="Confirm Password">
+              <input class="header__login-submit" type="submit" value="Sign Up">
+              <div class="header__login-text">
+                <span>Already have an account?&nbsp;</span>
+                <input class="header__login-btn" type="submit" value="Login"> 
+              </div class="header__login-text">
+              <div class="header__login-text">Problems logging in? Call 0123456222</div>
+            </form>
+          </div> -->
         </nav>
       </div>
       <div class="burger__menu-btn">
