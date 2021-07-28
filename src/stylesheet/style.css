@@ -340,6 +340,7 @@ a.header__link-active {
   line-height: 12px;
 }
 .card__title {
+  margin-top: 6px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -478,7 +479,7 @@ a.header__link-active {
   padding: 16px 0;
   font-family: 'Public Sans', sans-serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -961,13 +962,13 @@ td {
     margin-left: 5px;
     display: none;
   }
-  .header__login {
-    /* display: block; */
-    /* transform: translate(-50%, -50%);
+  /* .header__login {
+    display: block;
+    transform: translate(-50%, -50%);
     top: 100%;
-    left: 25%; */
-    /* height: 400px; */
-  }
+    left: 25%;
+    height: 400px;
+  } */
   .burger__menu-btn {
     /* visibility: visible; */
     display: block;
