@@ -28,4 +28,4 @@ window.addEventListener('click', function(event) {
   if (event.target == loginActive) {
     loginActive.style.display = "none";
   }
-})
+});
