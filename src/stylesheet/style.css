@@ -636,8 +636,20 @@ a.header__link-active {
 }
 
 .login__product-info h3 {
+  text-align: center;
   color: rgba(0, 0, 0, 0.88);
-  margin: 24px 0 32px 0;
+  padding: 74px 0 60px 0;
+  /* margin: 24px 0 32px 0; */
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.login__product-info h4 {
+  text-align: start;
+  color: rgba(0, 0, 0, 0.88);
+  padding: 64px 0 8px 0;
+  /* margin: 24px 0 32px 0; */
   font-family: 'Public Sans', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -646,19 +658,18 @@ a.header__link-active {
 .login__info-position {
   display: flex;
   justify-content: space-between;
+  font-family: 'Public Sans', sans-serif;
 }
 .login__info-text {
   color: rgba(0, 0, 0, 0.8);
-  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   font-size: 14px;
   line-height: 28px;
   display: flex;
 }
 .login__info-bold {
-  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .login__info-links {
   color: #005EB0;
@@ -667,22 +678,25 @@ a.header__link-active {
 }
 
 .profile__table {
+  font-family: 'Public Sans', sans-serif;
   display: grid;
   border-collapse: collapse;
   min-width: 100%;
   grid-template-columns: 
-    minmax(10%, 0.8fr)
-    minmax(10%, 0.8fr)
-    minmax(10%, 0.8fr)
-    minmax(10%, 1.67fr)
+    minmax(10%, 0.9fr)
+    minmax(10%, 0.9fr)
     minmax(10%, 1fr)
-    minmax(8%, 0.4fr)
-    minmax(10%, 0.4fr);
+    minmax(10%, 2.8fr)
+    minmax(10%, 1.2fr)
+    minmax(8%, 0.2fr)
+    minmax(8%, 0.2fr);
     /* minmax(150px, 3.33fr)
     minmax(150px, 1.67fr); */
-    /* border: 1px solid #ccc; */
-    /* border-spacing: 1px; */
-    border: solid 1px #ccc;
+    /* border: 1px solid #ccc;
+    border-spacing: 1px; */
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
 }
 
 .profile__table thead,
@@ -715,6 +729,12 @@ td {
   font-size: 14px;
   line-height: 16px;
 }
+.profile__table td {
+  border-bottom: solid 1px #ccc;
+}
+.profile__table-b {
+  border-bottom: none;
+}
 
 /* th:nth-child(6) {
   border-right: 0;
@@ -726,6 +746,13 @@ td {
 
 th:last-child {
   border-left: 0;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+.cinemaPage {
+  cursor: pointer;
 }
 
 /* .profile__table td {
@@ -749,14 +776,18 @@ th:last-child {
 }
 .login__pay-price {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  padding: 0 0 48px 0;
+}
+.login__pay-price div:nth-child(2) {
+  margin-left: 16px;
 }
 .login__pay-text {
-  margin-top: 8px;
+  margin-top: 12px;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
@@ -928,15 +959,16 @@ th:last-child {
   justify-content: space-between;
   border-top: rgba(0, 0, 0, 0.8) solid 2px;
   border-bottom: rgba(0, 0, 0, 0.8) solid 2px;
+  padding: 0 22px 0 12px;
 }
 
 .details__tables {
-  margin-top: 94px;
+  margin-top: 114px;
 }
 .details__tables h3 {
   text-align: center;
   padding: 6px 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Public Sans', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -946,11 +978,11 @@ th:last-child {
   border-collapse: collapse;
   min-width: 100%;
   grid-template-columns: 
-    minmax(10%, 0.6fr)
+    minmax(10%, 0.8fr)
     minmax(10%, 0.6fr)
     minmax(10%, 0.5fr)
     minmax(10%, 0.7fr)
-    minmax(15%, 1.67fr);
+    minmax(25%, 1.3fr);
   border: none;
   border-bottom: 2px solid  rgba(0, 0, 0, 0.8);
 }
@@ -978,8 +1010,22 @@ td {
   font-size: 14px;
   line-height: 16px;
 }
+.details__table td:nth-child(3){
+  font-weight: bold;
+}
 
-
+.modal__details {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  /* padding-top: 80px;  */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
 @media screen and (max-width: 1024px) {
   .header__nav li {
     margin-left: 40px;
@@ -991,6 +1037,9 @@ td {
   }
   .modal__card-text {
     order: 1;
+  }
+  .login__info-bold {
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1062,4 +1111,3 @@ td {
 @media screen and (max-width: 320px) {
 
 }
-

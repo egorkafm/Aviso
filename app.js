@@ -8,19 +8,18 @@ let menuBtn = document.querySelector('.burger__menu-btn');
 let menu = document.querySelector('.burger__menu');
 const link = document.getElementById('headerLogin');
 const loginActive = document.querySelector(".header__login");
-const span = document.getElementsByClassName("close")[0];
+const exitModalLogin = document.getElementsByClassName("close")[0];
 
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 });
 
-
 link.addEventListener('click', function(){
   loginActive.style.display = "block";
 });
 
-span.addEventListener('click', function() {
+exitModalLogin.addEventListener('click', function() {
   loginActive.style.display = "none";
 });
 
