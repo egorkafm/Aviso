@@ -8,7 +8,10 @@
 li {
   list-style-type: none; 
 }
-
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .container {
   /* background: rgb(228, 165, 165); */
   max-width: 1020px; /* 1040px */
@@ -307,21 +310,13 @@ a.header__link-active {
   /* transform-origin: top; */
 }
 .news__card:hover {
-  background: rgba(0, 94, 176, 1);
+  /* background: rgba(0, 94, 176, 1); */
+  background: linear-gradient(rgba(0, 94, 176, 1), rgba(34, 77, 133, 1));
   color: #FFFFFF;
   cursor: pointer;
   position: relative;
-  bottom: 110px;
-  /* align-items: flex-end; */
-  /* transform: rotate(360deg); */
-    /* align-self: flex-end;
-    align-self: flex-end; */
-  /* top: -120px; */
-  /* height: 367px; */
-  /* height: 100%; */
-  /* height: 300px; */
-  /* height: 420px;
-  margin-bottom: 120px; */
+  bottom: 120px;
+  /* bottom: 180px; */
   transition: all 0.3s ease; 
 }
 /* .news__card:hover .card__date .card__title .card__content .card__btn{
@@ -479,8 +474,9 @@ a.header__link-active {
 }
 .legislation__item {
   margin-top: 24px;
+  margin-left: 15px;
   padding-right: 5%;
-  flex: 44%;
+  flex: 42%;
   position: relative;
 }
 .mt-40 {
@@ -501,7 +497,7 @@ a.header__link-active {
   position: absolute;
   height: 100%;
   top: 5px;
-  left: -15px;
+  left: -25px;
 }
 .legislation__subtitle {
   color: rgba(0, 94, 176, 1);
@@ -524,7 +520,7 @@ a.header__link-active {
 }
 .faq__title {
   color: rgba(255, 255, 255, 0.96);
-  margin-top: 28px;
+  margin-top: 30px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -572,11 +568,13 @@ a.header__link-active {
 .footer__content {
   display: flex;
   justify-content: space-between;
+
 }
 .footer__contacts {
-  margin: 120px 0 0 0px;
+  margin: 110px 82px 174px 120px;
   /* width: 243px; */
-  width: 296px;
+  width: 253px;
+  /* width: 445px; */
   color: rgba(255, 255, 255, 0.88);
   font-family: 'Public Sans', sans-serif;
 }
@@ -661,6 +659,7 @@ a.header__link-active {
   font-family: 'Public Sans', sans-serif;
 }
 .login__info-text {
+  font-family: 'Public Sans', sans-serif;
   color: rgba(0, 0, 0, 0.8);
   font-weight: normal;
   font-size: 14px;
@@ -754,7 +753,16 @@ tr:last-child {
 .cinemaPage {
   cursor: pointer;
 }
-
+.gg1:hover {
+  /* background-color: #005EB0; */
+  font-weight: bold;
+}
+.gg2:hover {
+  background-color: #f1f1f1;
+}
+.gg3:hover {
+  color: #005EB0;
+}
 /* .profile__table td {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -889,7 +897,7 @@ tr:last-child {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  max-width: 833px;
 }
 
 .close {
@@ -937,6 +945,7 @@ tr:last-child {
 }
 .details__header-id {
   flex: 28%;
+  text-align: end;
 }
 
 .details__header-title {
@@ -959,11 +968,12 @@ tr:last-child {
   justify-content: space-between;
   border-top: rgba(0, 0, 0, 0.8) solid 2px;
   border-bottom: rgba(0, 0, 0, 0.8) solid 2px;
-  padding: 0 22px 0 12px;
+  padding: 0 19px 0 12px;
 }
 
 .details__tables {
   margin-top: 114px;
+  font-family: 'Public Sans', sans-serif;
 }
 .details__tables h3 {
   text-align: center;
@@ -981,8 +991,8 @@ tr:last-child {
     minmax(10%, 0.8fr)
     minmax(10%, 0.6fr)
     minmax(10%, 0.5fr)
-    minmax(10%, 0.7fr)
-    minmax(25%, 1.3fr);
+    minmax(10%, 0.6fr)
+    minmax(25%, 1.5fr);
   border: none;
   border-bottom: 2px solid  rgba(0, 0, 0, 0.8);
 }
@@ -1041,6 +1051,16 @@ td {
   .login__info-bold {
     margin-right: 10px;
   }
+  .news {
+    height: 580px;
+  }
+  .news__card:hover {
+    bottom: 0px;
+  }
+  .footer__contacts {
+    margin: 30px 0;
+  }
+
 }
 @media screen and (max-width: 768px) {
   .header__nav li {
@@ -1058,9 +1078,12 @@ td {
     /* visibility: visible; */
     display: block;
   }
+  .news {
+    height: 880px;
+  }
   .news__card {
     max-width: 100%;
-    flex: 20%;
+    flex: 100%;
     margin: 16px;
   }
   .legislation__item {
@@ -1073,8 +1096,8 @@ td {
     display: block;
   }
   .footer__contacts {
-    margin: 32px 0 0 0px;
-
+    margin: 0;
+    padding-top: 20px;
   }
   .faq__content-text {
     width: 90%;
@@ -1083,7 +1106,8 @@ td {
     display: block;
   }
   .search__map {
-    margin: 32px 0;
+    margin: 0;
+    padding: 20px 0;
   }
 }
 
