@@ -20,7 +20,7 @@
   <header class="header">
     <div class="container">
       <div class="header__menu">
-        <div class="header__logo">Aviso</div>
+        <div class="header__logo">aviso.net.br</div>
         <div class="header__nav">
           <nav>
             <ul class="header__links-position">
@@ -31,7 +31,7 @@
               <!-- <li id='headerLogin' class="header__link">Login ./login.html</li> -->
               <li><a class="header__link" href="#">Contact</a></li>
             </ul>
-            <div class="header__login">
+            <div id="loginBtn" class="header__login">
               <span class="close">&times;</span>
               <form action="#">
                 <input class="header__login-inp" type="email" placeholder="Email">
@@ -44,7 +44,7 @@
                 <div class="header__login-text">Problems logging in? Call 0123456222</div>
               </form>
             </div>
-            <!-- <div class="header__login">
+            <div id='signUpBtn' class="header__login">
               <span class="close">&times;</span>
               <form action="#">
                 <input class="header__login-inp" type="email" placeholder="Email">
@@ -57,7 +57,7 @@
                 </div class="header__login-text">
                 <div class="header__login-text">Problems logging in? Call 0123456222</div>
               </form>
-            </div> -->
+            </div>
           </nav>
         </div>
         <div class="burger__menu-btn">
@@ -84,7 +84,7 @@
           <br><br>
           If producers are not able to sell their movies to local distributors, they will stop to produce movies or limit the budget so that the quality gets lower. No big explosions, not crashed cars.
         </p>
-        <button class="header__content-btn">Learn More</button>
+        <!-- <button class="header__content-btn">Learn More</button> -->
       </div>
     </div>
   </header>
@@ -258,8 +258,8 @@
   
   </section>
   <footer class="footer">
-      <div class="pl-10">
-        <div class="footer__content">
+      <div class="pl-10 container">
+        <div class="footer__content ">
           <div class="footer__contacts">
             <h3>Contacts</h3>
             <!-- <div class="address__icon">
@@ -279,6 +279,7 @@
             </p>
           </div>
           <iframe class="search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.161942124894!2d-46.63932518460977!3d-23.526677166198372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5866c7e8adbb%3A0x4db6c01fb89009f3!2sR.%20Ant%C3%B4nio%20Coruja%20-%20Bom%20Retiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brazil!5e0!3m2!1sen!2sua!4v1626900869167!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <!-- <div id="map"></div> -->
         </div>
         <p class="footer__copyright">
           Copyright © 2021 Aviso Todos os direitos reservados.
@@ -287,6 +288,10 @@
   </footer>
 </div>
   <script src="./app.js"></script>
+  <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfSHiwJR4Xg2Wy457ZcXIsk4-MUu27Bt8&callback=initMap&libraries=&v=weekly"
+      async>
+  </script> -->
 </body>
 
 </html>
