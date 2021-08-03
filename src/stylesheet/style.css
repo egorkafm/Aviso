@@ -897,7 +897,7 @@ tr:last-child {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 32wrapperpx;
+  padding: 32px;
   border: 1px solid #888;
   max-width: 833px;
 }
