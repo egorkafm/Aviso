@@ -11,6 +11,7 @@ const link = document.getElementById('headerLogin');
 const loginActive1 = document.querySelectorAll(".header__login")[0];
 const loginActive2 = document.querySelectorAll(".header__login")[1];
 const exitModalLogin = document.getElementsByClassName("close")[0];
+const exitModalLogin2 = document.querySelectorAll(".close")[1];
 const loginBtn = document.getElementById('loginBtn');
 const signUpBtn = document.getElementById('signUpBtn');
 const loginToggle1 = document.querySelectorAll('.header__login-btn')[0];
@@ -28,14 +29,16 @@ link.addEventListener('click', function(){
 
 exitModalLogin.addEventListener('click', function() {
   loginActive1.style.display = "none";
+});
+exitModalLogin2.addEventListener('click', function() {
   loginActive2.style.display = "none";
 });
 
-window.addEventListener('click', function(event) {
-  if (event.target == loginActive) {
-    loginActive.style.display = "none";
-  }
-});
+// window.addEventListener('click', function(event) {
+//   if (event.target == loginActive1) {
+//     loginActive1.style.display = "none";
+//   }
+// });
 
 loginToggle1.addEventListener('click', function(){
   // loginActive.style.display = "block";
